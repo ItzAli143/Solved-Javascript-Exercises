@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>java assignment 07</title>
+  </head>
+  <body>
+    <script>
+      // Making a keyless car
+
+      let play = prompt(
+        "Welcome to this keyless car. Do you want to drive? (y/n) "
+      );
+      if (play.toLowerCase() === "y") {
+        let age = parseInt(prompt("Please Enter your age:"));
+        if (age < 18) {
+          alert("Sorry, you are too young to drive this car. Powering Off!");
+        } else if (age === 18) {
+          alert(
+            "Congratulations! On your first year of driving. Enjoy the ride!"
+          );
+        } else if (age > 18) {
+          alert("Powering On! Enjoy the ride!");
+        }
+      } else {
+        alert("Thank you for visiting. Goodbye!");
+      }
+    </script>
+  </body>
+</html>

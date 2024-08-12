@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java assignment 06</title>
+</head>
+<body>
+    <script>
+        // shopping card exercise
+
+
+       let q =  prompt("Welcome to our shop! Do you want to continue: (y/n)");
+       if(q === "y"){
+        let name = prompt("Please enter the name of item you want to buy") ;
+        let price = parseFloat(prompt("Please enter the price of the item")) ;
+        let quantity = parseInt(prompt("Please enter the quantity of the item")) ;
+        console.log(`The subtotal of ${name} having price ${price} and quantity of ${quantity} is ${price*quantity}`)
+       }    
+       else{
+        console.log("Thank you for visiting us!")
+       }
+    </script>
+    
+</body>
+</html>

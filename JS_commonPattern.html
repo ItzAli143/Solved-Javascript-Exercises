@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS common pattern</title>
+  </head>
+  <body>
+    <script>
+      let targetNum = Math.floor(Math.random() * 10);
+      let guess = Math.floor(Math.random() * 10);
+
+      while (guess !== targetNum) {
+        console.log(`Guessed ${guess}.....Incorect`);
+        guess = Math.floor(Math.random() * 10);
+      }
+      console.log(`CORRECT! Guessed: ${guess} & target was: ${targetNum}`);
+    </script>
+  </body>
+</html>

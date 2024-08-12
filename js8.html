@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java assignment 08</title>
+</head>
+<body>
+
+    <script>
+
+        // Tweet checker exercise
+        // Prompt the user to enter a tweet
+        // Check if the tweet contains more than 140 characters
+        // If it does, display an error message and prompt the user to enter a new tweet
+        // If it doesn't, display a success message and count the number of words in the tweet
+
+        let tweet = prompt("Enter a tweet:");
+        let tweetLength = tweet.length;
+        let extra = tweetLength - 140 ;
+
+        if(tweetLength <= 140){
+            alert(`That ${tweetLength} char tweet will work!`)
+        }
+        else{
+            alert(`Your ${tweetLength} char tweet is ${extra} chars too long`)
+        }       
+       
+
+
+    </script>
+    
+</body>
+</html>

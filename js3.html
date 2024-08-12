@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Assignment 03</title>
+</head>
+<body>
+    <!-- <script>
+        // write a program that takes a four digit integer from user and show the digits on the screen seperately i.e if user enters 7531, it displays 1, 3, 5, 7 seperately
+
+        // -------------------------------------------------------------------------
+        // let num = (prompt("Enter a four digit integer:"));
+        // let a = num[3]
+        // let b = num[2]
+        // let c = num[1]
+        // let d = num[0]
+        // alert("The digits are: " + a , b + ", " + c + ", " + d);
+        // -------------------------------------------------------------------------
+
+        // shorthand property
+
+        let num = (prompt("Enter a four digit integer:"));
+        alert("The digits are "+ num[3] + "," + num[2] + "," + num[1] + "," + num[0])
+
+    </script> -->
+    
+
+    <!-- <script>
+        // write a program that takes a four digit integer from user and show the digits on the screen seperately i.e if user enters 7531, it displays 1, 3, 5, 7 seperately
+        let num = prompt("Enter a four digit integer:");
+        alert("The digits are: " + num.slice(3) + "  " + num.slice(2,3) + "  " + num.slice(1,2) + "  " + num.slice(0,1));
+    </script> -->
+
+    <script>
+        // write a program that takes a four digit integer from user and show the digits on the screen seperately i.e if user enters 7531, it displays 1, 3, 5, 7 seperately by modulus method
+        let num = parseInt(prompt("Enter a four digit integer:")) ;
+        let no1 = num%10 ;
+        rno = parseInt(num/10)
+        let no2 = rno%10 ;
+        rno = parseInt(rno/10)
+        let no3 = rno%10 ;
+        rno = parseInt(rno/10)
+        let no4 = rno%10 ;
+        alert("The digits are: " + no1 + "  " + no2 + "  " + no3 + "  " + no4)
+       
+
+        
+    </script>
+</body>
+</html>

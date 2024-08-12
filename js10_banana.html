@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment with array</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+      console.log(fruits);
+
+      fruits.shift(); /* remove the banana from the array */
+      fruits.sort(); /*sort the array in order */
+      fruits.push("Kiwi"); /* add a new fruit to the end of the array */
+      fruits.splice(0, 1); /* removing apple from the list */
+      fruits.reverse(); /* reversing the array */
+
+      console.log(fruits);
+      //   ------------------------------------------------------------------------
+
+      let fruit = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+      console.log(fruit[1][1][0]); // Output: Oranges
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifePhase Function</title>
+  </head>
+  <body>
+    <script>
+      function lifePhase(age) {
+        if (age >= 0 && age <= 3) {
+          return "Baby";
+        } else if (age >= 4 && age <= 12) {
+          return "Child";
+        } else if (age >= 13 && age <= 19) {
+          return "Teen";
+        } else if (age >= 20 && age <= 64) {
+          return "Adult";
+        } else if (age >= 64 && age <= 140) {
+          return "Senior Citizen";
+        } else {
+          return "This is not a valid age!";
+        }
+      }
+    </script>
+  </body>
+</html>
